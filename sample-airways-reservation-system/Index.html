@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airways Reservation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Airways Reservation System</h1>
+    <form id="reservation-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="flight-number">Flight Number:</label>
+        <input type="text" id="flight-number" name="flight-number"><br><br>
+        <label for="departure-date">Departure Date:</label>
+        <input type="date" id="departure-date" name="departure-date"><br><br>
+        <label for="return-date">Return Date:</label>
+        <input type="date" id="return-date" name="return-date"><br><br>
+        <label for="class">Class:</label>
+        <select id="class" name="class">
+            <option value="economy">Economy</option>
+            <option value="business">Business</option>
+            <option value="first-class">First Class</option>
+        </select><br><br>
+        <input type="submit" value="Book Flight">
+    </form>
+    <div id="reservation-result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
